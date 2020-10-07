@@ -1,0 +1,54 @@
+.about-wrapper {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+
+    @include respond(tab-land) {
+        width: 100%;
+        display: block;
+    }
+
+    &__text {
+        margin: 10rem auto;
+        width: 50rem;
+        height: auto;
+        hyphens: auto;
+        text-align: left;
+
+        @include respond(phone) {
+            display: block;
+            width: 80%;
+            text-align: justify;
+        }
+       
+    }
+
+    &__image {
+        width: 60rem;
+        height: auto;
+        margin: 10rem auto;
+        border-radius: 3px;
+        box-shadow: 2rem 2rem 4rem rgba($color-black, .2s);
+
+        @include respond(tab-land) {
+            margin: 0 auto;
+            display: block;
+         }
+
+        @include respond(phone) {
+            width: 80%;
+            height: auto;
+            margin: 10rem auto;
+            border-radius: 3px;
+            box-shadow: 2rem 2rem 4rem rgba($color-black, .2s);
+        }
+    }
+}
+
+
+
+
+
+
+
+            

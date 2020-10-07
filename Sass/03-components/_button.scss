@@ -1,0 +1,53 @@
+.button {
+
+    &,
+    &:link,
+    &:visited{
+        font-size: 2rem;
+        padding: 1rem 5rem;
+        left: 30%;
+        top: 40%;
+        color: white;
+        text-decoration: none;
+        box-shadow: 1rem 1rem 3rem rgba($color-black, 0.48);;
+        display: inline-block;
+        border-radius: 10px;
+        background-color: $color-primary;
+        transition: all .2s;
+    }
+
+    &:hover,
+    &:active {
+        box-shadow: none;
+        transform: translateY(.5rem);
+        background-color: $color-primary-dark;
+    }
+
+    @include respond(phone) {
+       width: 110%;
+    }
+    
+    
+}
+
+.discover {
+    position: absolute;
+    left: 30%;
+    top: 60%;
+
+    @include respond(tab-land) {
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+.send {
+    margin: auto auto 3rem 5rem;
+    text-align: center;
+
+    @include respond(phone){
+        margin: 1rem auto;
+    }
+}

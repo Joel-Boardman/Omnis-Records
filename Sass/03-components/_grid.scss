@@ -1,0 +1,82 @@
+
+.section-artists {
+   background-image: linear-gradient($color-grey-dark-2, $color-grey-dark-2);
+   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+   padding: 5rem 0 5rem 0;
+
+   @include respond(tab-land){
+    padding: 10rem;
+}
+
+
+    
+    .wrapper {
+        width: 90%;
+        margin: 15rem auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-column-gap: 5rem;
+
+        @include respond(tab-land){
+            width: 50%;
+            margin: 15rem auto;
+            display: block;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            margin: 0;
+        }
+    
+        .artists {
+            text-decoration: none;
+            transition: all .4s;
+
+            img {
+                width: 100%;
+                border-radius: 3px;
+                box-shadow:  6px 6px 17px -6px rgba($color-black, 0.75);
+
+            }
+
+            &__name {
+                width: 80%;
+                color: $color-white;
+                border-radius: 3px;
+                background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5)  50%, $color-primary 50%);
+                background-size: 220%;
+                transition: all .4s;
+
+                @include respond(tab-land){
+                    margin-bottom: 10rem;
+                }
+
+                @include respond(phone) {
+                    width: 80%;
+                }
+            }
+
+            &:hover{
+                transform: translateY(-5%);
+                
+                &, .artists__name{
+                    background-position: 100%;
+                    color: $color-white; 
+                }
+            }
+
+            
+
+            
+        }
+    }
+}
+
+.row {
+    margin: 15rem auto;
+
+    @include clearfix;
+}
+        
+            
+        

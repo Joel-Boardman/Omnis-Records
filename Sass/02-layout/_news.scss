@@ -1,0 +1,40 @@
+.news-wrapper {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+
+    @include respond(phone) {
+        display: block;
+    }
+
+    &__image {
+        width: 60rem;
+        height: auto;
+        margin: 10rem auto;
+        border-radius: 3px;
+        box-shadow: 2rem 2rem 4rem rgba($color-black, .2s);
+
+        @include respond(phone) {
+            display: block;
+            width: 80%;
+            margin: 5rem auto;
+        }
+    }
+
+    &__text {
+        margin: 10rem auto;
+        width: 50rem;
+        height: auto;
+        hyphens: auto;
+        text-align: right;
+
+        @include respond(phone) {
+            display: block;
+            width: 80%;
+            text-align: justify;
+        }
+       
+    }
+
+}

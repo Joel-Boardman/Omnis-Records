@@ -1,0 +1,33 @@
+.navigation {
+
+    &__checkbox {
+        top: 3.5rem;
+        left: 3.5rem;
+        width: 5rem;
+        height: 5rem;
+        position: fixed;
+        border-radius: 50%;
+        z-index: 2000;
+        cursor: pointer;
+        box-shadow:  6px 6px 17px -6px rgba($color-black, 0.75);
+    }
+
+    &__icon{
+        top: 2.5rem;
+        left: 2.5rem;
+        width: 7rem;
+        height: 7rem;
+        position: fixed;
+        border-radius: 50%;
+        z-index: 2000;
+        cursor: pointer;
+
+        transition: all 1s;
+    }
+
+    &__icon:hover {
+        transform: rotate(720deg);
+    }
+
+
+}
